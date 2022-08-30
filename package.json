@@ -1,0 +1,41 @@
+{
+  "name": "DiSh",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "redpeacock78",
+  "license": "MIT",
+  "repository": "https://github.com/redpeacock78/DiSh",
+  "dependencies": {
+    "@keyv/redis": "^2.5.0",
+    "axios": "^0.27.2",
+    "discord.js": "^14.3.0",
+    "dotenv": "^16.0.1",
+    "figlet": "^1.5.2",
+    "keyv": "^4.4.1"
+  },
+  "devDependencies": {
+    "@types/figlet": "^1.5.5",
+    "@typescript-eslint/eslint-plugin": "^5.35.1",
+    "@typescript-eslint/parser": "^5.35.1",
+    "eslint": "^8.22.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-import-resolver-typescript": "^3.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "nodemon": "^2.0.19",
+    "prettier": "^2.7.1",
+    "textlint": "^12.2.1",
+    "textlint-plugin-jsx": "^1.1.2",
+    "textlint-rule-preset-ja-spacing": "^2.2.0",
+    "textlint-rule-preset-ja-technical-writing": "^7.0.0",
+    "ts-node": "^10.9.1",
+    "tsc-alias": "^1.7.0",
+    "tsconfig-paths": "^4.1.0",
+    "typescript": "^4.7.4"
+  },
+  "scripts": {
+    "dev": "nodemon",
+    "build": "tsc -p tsconfig.json && tsc-alias -p tsconfig.json",
+    "start": "node ./dist/src/main.js",
+    "lint-fix": "eslint --fix 'src/**/*.[tj]s' && textlint --fix *"
+  }
+}

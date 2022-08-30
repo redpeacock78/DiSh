@@ -1,0 +1,16 @@
+version: "3.2"
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile.app
+    command: "yarn dev"
+    volumes:
+      - .:/app
+    tty: true
+
+  redis:
+    image: "redis:7.0.4-alpine"
+    ports:
+      - "6379:6379"
