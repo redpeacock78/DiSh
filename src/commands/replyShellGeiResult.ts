@@ -35,7 +35,10 @@ export const replyShellGeiResult = (client: Discord.Client<boolean>): void => {
               )
               .map((i: Discord.Attachment): string => i.attachment as string)
           );
-          const code = message.content.replace(command, '');
+          const code = message.content
+            .replace(command, '')
+            .replace(/^ /g, '')
+            .replace(/^\n+/, '');
           const postData = {
             code: code,
             images: images,

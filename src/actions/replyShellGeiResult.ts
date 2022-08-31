@@ -23,7 +23,8 @@ export const replyShellGeiResult = (client: Discord.Client<boolean>): void => {
           );
           const code = message.content
             .replace(new RegExp(`${client.user as unknown as string}`, 'g'), '')
-            .replace(/^ /g, '');
+            .replace(/^ /g, '')
+            .replace(/^\n+/, '');
           const postData = {
             code: code,
             images: images,
