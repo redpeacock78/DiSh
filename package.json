@@ -36,7 +36,7 @@
   "scripts": {
     "dev": "nodemon",
     "build": "tsc -p tsconfig.json && tsc-alias -p tsconfig.json",
-    "start": "node ./dist/src/main.js",
+    "start": "pm2 start --no-daemon ./dist/src/main.js",
     "lint-fix": "eslint --fix 'src/**/*.[tj]s' && textlint --fix *"
   }
 }
