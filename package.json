@@ -22,6 +22,7 @@
     "eslint-import-resolver-typescript": "^3.5.0",
     "eslint-plugin-import": "^2.26.0",
     "nodemon": "^2.0.19",
+    "pm2": "^5.2.2",
     "prettier": "^2.7.1",
     "textlint": "^12.2.1",
     "textlint-plugin-jsx": "^1.1.2",
