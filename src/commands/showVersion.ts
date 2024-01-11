@@ -35,7 +35,7 @@ export const showVersion = (client: Discord.Client<boolean>): void => {
             `websh Bot for Discord (${pacageJson.name}) version ${pacageJson.version}\n` +
             `Copyright (c) 2022 ${pacageJson.author}\n` +
             `Released under the ${pacageJson.license} License.\n` +
-            `${pacageJson.repository as string}`;
+            `${pacageJson.repository}`;
           await message.channel.send({
             embeds: [
               {
