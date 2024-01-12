@@ -1,11 +1,12 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 /* eslint-disable @typescript-eslint/no-unused-vars */
-import axios, {
+import axios from 'axios';
+import type {
   AxiosInstance,
   AxiosRequestConfig,
   AxiosResponse,
   AxiosError,
-} from 'axios';
+} from "axios"
 
 declare module 'axios' {
   export interface AxiosRequestConfig {
