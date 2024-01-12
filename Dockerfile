@@ -1,4 +1,4 @@
-FROM jarredsummer/bun:edge
+FROM over/bun:1
 
 WORKDIR /usr/src/app
 COPY . /usr/src/app/
