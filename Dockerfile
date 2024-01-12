@@ -1,4 +1,4 @@
-FROM over/bun:1
+FROM over/bun:latest
 
 WORKDIR /usr/src/app
 COPY . /usr/src/app/
